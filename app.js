@@ -116,7 +116,8 @@ nxtbtn.addEventListener("click", function (e) {
       "200",
       "Time : 11:00 AM - 01:00 PM",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
-      "Tagline: Opening Ceremony"
+      "Tagline: Opening Ceremony",
+      "CTF.png"
     );
   }
   if (i == 2) {
@@ -131,7 +132,8 @@ nxtbtn.addEventListener("click", function (e) {
       `ethical hacking workshop for students , pros and cons , various tools and awareness 
     Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
     `,
-      "Tagline: ethical hacking workshop"
+      "Tagline: ethical hacking workshop",
+      "CTF.png"
     );
     i = 0;
   }
@@ -145,9 +147,10 @@ function dayy1(e) {
   tagline.innerHTML = "Tagline: Opening Ceremony";
   desc.innerHTML =
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.";
-}
+  
+  }
 
-function change(e, i, n, a, b, c, d, f, g) {
+function change(e, i, n, a, b, c, d, f, g, z) {
   day.innerHTML = e;
   counter.innerHTML = `${i}/${n}`;
   ename.innerHTML = a;
@@ -156,7 +159,10 @@ function change(e, i, n, a, b, c, d, f, g) {
   stxt3.innerHTML = d;
   desc.innerHTML = f;
   tagline.innerHTML = g;
-  
+  const imagePath = `src/${z}`;
+  enamediv.style.background = `url('${imagePath}')`;
+  enamediv.style.backgroundSize = "100% 100%";
+  console.log(z);
 }
 
 day1.addEventListener("click", function (e) {
@@ -177,7 +183,8 @@ day1.addEventListener("click", function (e) {
         "200",
         "Time : 11:00 AM - 01:00 PM",
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
-        "Tagline: Opening Ceremony"
+        "Tagline: Opening Ceremony",
+        "CTF.png"
       );
     }
     if (i == 2) {
@@ -192,7 +199,8 @@ day1.addEventListener("click", function (e) {
         `ethical hacking workshop for students , pros and cons , various tools and awareness 
     Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
     `,
-        "Tagline: ethical hacking workshop"
+        "Tagline: ethical hacking workshop",
+        "Ethical_hacking_workshop.png"
       );
       i = 0;
     }
@@ -225,7 +233,8 @@ day2.addEventListener("click", function (e) {
         "200",
         "Time : 08:00 AM - 01:00 PM",
         " Treasure hunt  Digital Key Quest is a treasure hunt event where you decipher clues, solve puzzles, and unlock digital keys to hidden treasure",
-        "Tagline: Digital key quest"
+        "Tagline: Digital key quest",
+        "DIGITAL_KEY_QUEST.png"
       );
     }
     if (i == 2) {
@@ -238,7 +247,8 @@ day2.addEventListener("click", function (e) {
         "200",
         "Time : 02:00 - 04:00 PM",
         "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
-        "Tagline: DRDO workshop"
+        "Tagline: DRDO workshop",
+        "Ethical_hacking_workshop.png"
       );
     }
     if (i == 3) {
@@ -251,7 +261,8 @@ day2.addEventListener("click", function (e) {
         "200",
         "Time : 04:00 - 05:00 PM ",
         "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
-        "Tagline: CTF how is that event and why? "
+        "Tagline: CTF how is that event and why? ",
+        "CTF_SEMINAR.png"
       );
       i = 0;
     }
@@ -284,7 +295,8 @@ day3.addEventListener("click", function (e) {
         "200",
         "Time :10:00 AM - 04:00 PM",
         "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
-        "Tagline: MUN"
+        "Tagline: MUN",
+        "MUN.png"
       );
     }
     if (i == 2) {
@@ -297,7 +309,7 @@ day3.addEventListener("click", function (e) {
         "200",
         "Time : 04:30 - 06:30 PM",
         "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
-        "Tagline: OPEN MIC"
+        "Tagline: OPEN MIC","open_mic.png"
       );
       i = 0;
     }
@@ -330,7 +342,8 @@ day4.addEventListener("click", function (e) {
         "200",
         "Time : 08:00 AM - 12:00 PM",
         "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.",
-        "Tagline: Imposter Among Us - Hunt or BeHunted!"
+        "Tagline: Imposter Among Us - Hunt or BeHunted!",
+        "IMPOSTER_HUNT.png"
       );
     }
     if (i == 2) {
@@ -343,7 +356,8 @@ day4.addEventListener("click", function (e) {
         "200",
         "Time : 02:00 - 05:00 PM",
         "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts.        ",
-        "Tagline: Catch the flag and be a hero"
+        "Tagline: Catch the flag and be a hero",
+        "CTF.png"
       );
     }
     if (i == 3) {
@@ -356,7 +370,8 @@ day4.addEventListener("click", function (e) {
         "200",
         "Time : 05:00 - 06:30 PM",
         "lorem ipsum dolor sit amet, consectetur adipiscing lorem, sed diam nonumy lore lore lorem.",
-        "Tagline: Closing ceremony"
+        "Tagline: Closing ceremony",
+        "CTF.png"
       );
       i = 0;
     }
