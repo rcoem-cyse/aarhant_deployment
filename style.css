@@ -4,7 +4,9 @@
   --color-3: #fbbc04;
   --color-4: #6d3b93;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   padding: 0;
   margin: 0;
@@ -170,6 +172,9 @@ body {
   flex-direction: column;
   gap: 1em;
   z-index: 1;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 300;
 }
 
 .tag_heading {
@@ -181,6 +186,7 @@ body {
 .tag_heading h1 {
   font-size: 2rem;
   z-index: 1;
+  font-weight: 400;
 }
 .tag_info {
   text-align: center;
@@ -607,9 +613,7 @@ body {
   gap: 0.5em;
   cursor: pointer;
 }
-#abt_hod_info {
-  display: none;
-}
+
 .abt_small_cont p {
   cursor: pointer;
 }
@@ -643,7 +647,8 @@ body {
   background-color: #031f3f44;
   padding: 1% 1% 1% 2%;
   gap: 1em;
-  z-index: 7;
+  z-index: 9;
+  /* visibility: hidden; */
 }
 .abt_small_info h2 {
   color: #12618b;
@@ -757,7 +762,7 @@ body {
 
 @media (max-width: 550px) {
   .about_us_cont {
-    margin-top: 7em;
+    margin-top: 4.2em;
 
     height: 120vh;
   }
@@ -892,7 +897,7 @@ body {
 
 @media (min-width: 550px) and (max-width: 900px) {
   .about_us_cont {
-    margin-top: 7em;
+    margin-top: 5em;
 
     height: 120vh;
   }
@@ -1470,11 +1475,10 @@ body {
 .ename h1 {
   font-size: 6.5vw;
   font-weight: 800;
-  mix-blend-mode: color-dodge;
-  color: transparent;
-  -webkit-text-stroke: 2.5px rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.7);
-  -webkit-background-clip: text;
+  mix-blend-mode: hard-light;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  z-index: 6;
 }
 
 .tag {
@@ -1596,8 +1600,8 @@ body {
 }
 
 .card {
-  width: 18rem;
-  height: 30rem;
+  width: 20rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   border: white 0.09em solid;
@@ -1607,7 +1611,7 @@ body {
 }
 .cardimg {
   width: 100%;
-  height: 60%;
+  height: 45%;
   border-bottom: #fff 0.1em solid;
 }
 
@@ -1620,7 +1624,7 @@ body {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .cdetails h4 {
   font-size: 25px;
@@ -1638,6 +1642,17 @@ body {
 /* media queries */
 
 @media (max-width: 650px) {
+  #eveeMainContt {
+    /* background-image: url("Vector\ 6.png");
+    background-size: 90% cover; */
+    position: relative;
+    width: 100%;
+    margin-top: -3em;
+  }
+  #h11 {
+    margin-bottom: 1.2em;
+  }
+
   #evcont {
     height: 39rem;
     width: 105%;
@@ -1657,6 +1672,7 @@ body {
     width: 89%;
     border-radius: 100px;
     text-transform: uppercase;
+    font-weight: 550;
   }
 
   #dinfo {
@@ -1684,10 +1700,11 @@ body {
     height: 32%;
 
     background-size: 100% 100%;
+    text-align: center;
   }
 
   .ename h1 {
-    font-size: 7.5vw;
+    font-size: 11.5vw;
   }
 
   .tag {
@@ -1740,6 +1757,19 @@ body {
     font-size: 15px;
     font-weight: 300;
   }
+  #eveBox {
+    margin-top: 2rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1em;
+    z-index: 1;
+    gap: 1rem;
+  }
   .cards h1 {
     font-size: 1.5em;
   }
@@ -1747,7 +1777,7 @@ body {
     word-spacing: 2px;
   }
   .cards_container {
-    gap: 3rem;
+    gap: 1.5rem;
   }
 }
 
