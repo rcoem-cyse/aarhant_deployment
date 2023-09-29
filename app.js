@@ -112,8 +112,8 @@ nxtbtn.addEventListener("click", function (e) {
       i,
       2,
       "Opening Ceremony",
-      "2M",
-      "200",
+      "2",
+      "",
       "Time : 11:00 AM - 01:00 PM",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
       "Tagline: Opening Ceremony"
@@ -125,11 +125,10 @@ nxtbtn.addEventListener("click", function (e) {
       i,
       2,
       "Workshop",
-      "2M",
+      "",
       "200",
       "Time : 02:00-04:00 PM",
-      `ethical hacking workshop for students , pros and cons , various tools and awareness 
-    Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
+      `Explore the realm of ethical hacking and cybersecurity in our comprehensive workshop. Gain insights into tools, ethical principles, and responsible hacking practices. In today's digital world, ethical hackers play a vital role in safeguarding systems. Join us for an interactive experience, fostering cybersecurity awareness, whether you aspire to a cybersecurity career or seek knowledge
     `,
       "Tagline: ethical hacking workshop"
     );
@@ -189,8 +188,7 @@ day1.addEventListener("click", function (e) {
         "2M",
         "200",
         "Time : 02:00-04:00 PM",
-        `ethical hacking workshop for students , pros and cons , various tools and awareness 
-    Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
+        `Dive into Ethical Hacking & Cybersecurity: Discover tools, ethics, and responsible practices. Essential in our digital world, join us for interactive learning, whether you aim for a career or knowledge.
     `,
         "Tagline: ethical hacking workshop"
       );
@@ -250,7 +248,7 @@ day2.addEventListener("click", function (e) {
         "2M",
         "200",
         "Time : 04:00 - 05:00 PM ",
-        "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
+        "Unlock the world of Capture the Flag (CTF) in our seminar. Dive into thrilling challenges, puzzles, and cybersecurity insights. Discover why CTF is vital in the digital era. Join us!",
         "Tagline: CTF how is that event and why? "
       );
       i = 0;
@@ -280,8 +278,8 @@ day3.addEventListener("click", function (e) {
         i,
         2,
         "MUN Security Council",
-        "2M",
-        "200",
+        "2",
+        "350",
         "Time :10:00 AM - 04:00 PM",
         "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
         "Tagline: MUN"
@@ -293,10 +291,9 @@ day3.addEventListener("click", function (e) {
         i,
         2,
         "Open Mic",
-        "2M",
-        "200",
+        "",
         "Time : 04:30 - 06:30 PM",
-        "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
+        "Embrace OPEN MIC: A celebration of creativity and diverse voices through spoken word, music, comedy, and more. Perform or witness, it's your stage for self-expression. Join our vibrant, inclusive community!",
         "Tagline: OPEN MIC"
       );
       i = 0;
@@ -314,7 +311,7 @@ day4.addEventListener("click", function (e) {
   btxt3.innerHTML = "06/10/23";
   tagline.innerHTML = "Tagline: Imposter Among Us - Hunt or BeHunted!";
   desc.innerHTML =
-    "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.";
+    "Step into the immersive realm of Among Us brought to life. Uncover imposters, gather clues, and survive the thrilling fusion of trust and deception in this real-world gaming experience.";
 
   console.log(e.target.textContent);
   nxtbtn.addEventListener("click", function () {
@@ -326,8 +323,8 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Imposter Hunt",
-        "2M",
-        "200",
+        "4",
+        "100",
         "Time : 08:00 AM - 12:00 PM",
         "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.",
         "Tagline: Imposter Among Us - Hunt or BeHunted!"
@@ -339,10 +336,10 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Catch The Flag",
-        "2M",
-        "200",
+        "1",
+        "100",
         "Time : 02:00 - 05:00 PM",
-        "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts.        ",
+        "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts. ",
         "Tagline: Catch the flag and be a hero"
       );
     }
@@ -352,8 +349,8 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Closing Ceremony",
-        "2M",
-        "200",
+        "",
+        "",
         "Time : 05:00 - 06:30 PM",
         "lorem ipsum dolor sit amet, consectetur adipiscing lorem, sed diam nonumy lore lore lorem.",
         "Tagline: Closing ceremony"
