@@ -53,7 +53,7 @@ body {
 
 .header nav {
   width: 100%;
-  padding: 0 1.2em;
+  padding: 0.5 1.2em;
   display: flex;
   justify-content: center;
   gap: 2.1%;
@@ -81,6 +81,7 @@ body {
 
 #nav_right img {
   width: 7vw;
+  margin-top: 0.8em;
 }
 
 #gif {
@@ -1290,6 +1291,23 @@ body {
   gap: 0.5em;
   font-weight: 100;
   color: rgb(95, 155, 155);
+
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.social-icons span {
+  margin-right: 4%;
+  
+}
+
+.social-icons a {
+  color: white; 
+  margin-right: 10px; 
 }
 
 /* fotter media queires  */
@@ -1659,7 +1677,7 @@ body {
   gap: 10px;
 }
 .cdetails h4 {
-  font-size: 25px;
+  font-size: 23px;
   color: #45edf2;
   font-weight: 400;
   text-transform: uppercase;
@@ -1668,7 +1686,7 @@ body {
   font-weight: 300;
 
   font-size: 15px;
-  line-height: 20px;
+  line-height: 19px;
 }
 
 /* media queries */

@@ -174,10 +174,12 @@ nxtbtn.addEventListener("click", function (e) {
       i,
       2,
       "Opening Ceremony",
-      "2M",
-      "200",
+      "",
+      "",
       "Time : 11:00 AM - 01:00 PM",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
+
+      "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
+
       "Tagline: Opening Ceremony",
       "url('image 17.png')"
     );
@@ -188,8 +190,8 @@ nxtbtn.addEventListener("click", function (e) {
       i,
       2,
       "Workshop",
-      "2M",
-      "200",
+      "",
+      "79",
       "Time : 02:00-04:00 PM",
       `ethical hacking workshop for students , pros and cons , various tools and awareness 
     Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
@@ -208,7 +210,9 @@ function dayy1(e) {
   btxt3.innerHTML = "03/10/23";
   tagline.innerHTML = "Tagline: Opening Ceremony";
   desc.innerHTML =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.";
+
+    "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape";
+
   enamediv.style.backgroundImage = "url('image 17.png')";
 }
 
@@ -242,10 +246,12 @@ day1.addEventListener("click", function (e) {
         i,
         2,
         "Opening Ceremony",
-        "2M",
-        "200",
+        "",
+        "",
         "Time : 11:00 AM - 01:00 PM",
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
+
+        "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
+
         "Tagline: Opening Ceremony",
         "url('image 17.png')"
       );
@@ -256,8 +262,8 @@ day1.addEventListener("click", function (e) {
         i,
         2,
         "Workshop",
-        "2M",
-        "200",
+        "",
+        "79",
         "Time : 02:00-04:00 PM",
         `ethical hacking workshop for students , pros and cons , various tools and awareness 
     Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
@@ -296,8 +302,8 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Digital Key Quest",
-        "2M",
-        "200",
+        "4",
+        "150",
         "Time : 08:00 AM - 01:00 PM",
         " Treasure hunt  Digital Key Quest is a treasure hunt event where you decipher clues, solve puzzles, and unlock digital keys to hidden treasure",
         "Tagline: Digital key quest",
@@ -310,8 +316,8 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Workshop",
-        "2M",
-        "200",
+        "",
+        "50",
         "Time : 02:00 - 04:00 PM",
         "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
         "Tagline: DRDO workshop",
@@ -324,8 +330,8 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Seminar(CTF)",
-        "2M",
-        "200",
+        "",
+        "Free",
         "Time : 04:00 - 05:00 PM ",
         "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
         "Tagline: CTF how is that event and why? ",
@@ -362,8 +368,8 @@ day3.addEventListener("click", function (e) {
         i,
         2,
         "MUN Security Council",
-        "2M",
-        "200",
+        "2",
+        "350",
         "Time :10:00 AM - 04:00 PM",
         "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
         "Tagline: MUN",
@@ -376,10 +382,12 @@ day3.addEventListener("click", function (e) {
         i,
         2,
         "Open Mic",
-        "2M",
-        "200",
+        "",
+        "Free",
         "Time : 04:30 - 06:30 PM",
-        "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
+
+        "Welcome to OPEN MIC, where we celebrate unbridled creativity and amplify diverse voices.Join us for an unforgettable, electrifying experience. Don't miss out on this opportunity to be part of our vibrant and inclusive community!",
+
         "Tagline: OPEN MIC",
         "url('src/Open mic.png')"
       );
@@ -415,7 +423,7 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Imposter Hunt",
-        "2M",
+        "4",
         "200",
         "Time : 08:00 AM - 12:00 PM",
         "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.",
@@ -429,8 +437,8 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Catch The Flag",
-        "2M",
-        "200",
+        "1",
+        "100",
         "Time : 02:00 - 05:00 PM",
         "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts.        ",
         "Tagline: Catch the flag and be a hero",
@@ -443,10 +451,12 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Closing Ceremony",
-        "2M",
-        "200",
+        "",
+        "",
         "Time : 05:00 - 06:30 PM",
-        "lorem ipsum dolor sit amet, consectetur adipiscing lorem, sed diam nonumy lore lore lorem.",
+
+        "Join us at the closing ceremony of Aarhant2.0!",
+
         "Tagline: Closing ceremony",
         "url('src/image 675.png')"
       );
