@@ -15,17 +15,6 @@ let stxt3 = document.querySelector("#stxt3");
 let desc = document.querySelector("#desc");
 let tagline = document.querySelector("#tagline");
 
-let abtHod = document.querySelector("#abt_hod");
-let abtEvents = document.querySelector("#abt_events");
-let abtMission = document.querySelector("#abt_mission");
-let abtMessage = document.querySelector("#abt_message");
-let hodInfo = document.querySelector("#abt_hod_info");
-let evInfo = document.querySelector("#abt_events_info");
-let missionInfo = document.querySelector("#abt_mission_info");
-let messageInfo = document.querySelector("#abt_message_info");
-let backImg = document.querySelector(".backimg")
-const blob = document.getElementById("blob");
-
 window.onpointermove = (event) => {
   const { clientX, clientY } = event;
 
@@ -71,37 +60,105 @@ document.querySelector(".ar2").onmouseover = (event) => {
 
 // about section
 
-abtHod.addEventListener("click", function (e) {
-  if (hodInfo.style.display == "none") {
-    hodInfo.style.display = "flex";
-  } else {
+let abtHod = document.querySelector("#abt_hod");
+let abtEvents = document.querySelector("#abt_events");
+let abtMission = document.querySelector("#abt_mission");
+let abtMessage = document.querySelector("#abt_message");
+let hodInfo = document.querySelector("#abt_hod_info");
+let evInfo = document.querySelector("#abt_events_info");
+let missionInfo = document.querySelector("#abt_mission_info");
+let messageInfo = document.querySelector("#abt_message_info");
+let backImg = document.querySelector(".backimg");
+const blob = document.getElementById("blob");
+let abtSmallInfo = document.getElementsByClassName(".abt_small_info");
+let messImg = document.querySelector("#messimg");
+
+var display = 0;
+var d2 = 0;
+var d3 = 0;
+var d4 = 0;
+function hide(display, d2) {
+  if (display == 0) {
     hodInfo.style.display = "none";
   }
-});
-abtEvents.addEventListener("click", function (e) {
-  if (evInfo.style.display == "none") {
-    evInfo.style.display = "flex";
-  } else {
+  if (d2 == 0) {
     evInfo.style.display = "none";
   }
-});
-abtMission.addEventListener("click", function (e) {
-  if (missionInfo.style.display == "none") {
-    missionInfo.style.display = "flex";
-  } else {
+  if (d3 == 0) {
     missionInfo.style.display = "none";
   }
-});
-abtMessage.addEventListener("click", function (e) {
-  if (messageInfo.style.display == "none") {
-    messageInfo.style.display = "flex";
-  } else {
+  if (d4 == 0) {
     messageInfo.style.display = "none";
   }
-});
+}
+
+function hodShow() {
+  if (display == 0) {
+    hodInfo.style.display = "flex";
+
+    d2 = 0;
+    d3 = 0;
+    d4 = 0;
+    // if (d2 == 0) {
+    //   evInfo.style.display = "none";
+    //   console.log("d2 = 0");
+    // }
+
+    display = 1;
+    hide(display, d2, d3, d4);
+  } else {
+    hodInfo.style.display = "none";
+    display = 0;
+  }
+}
+
+function evShow() {
+  if (d2 == 0) {
+    evInfo.style.display = "flex";
+    display = 0;
+    d3 = 0;
+    d4 = 0;
+    d2 = 1;
+    hide(display, d2, d3, d4);
+  } else {
+    evInfo.style.display = "none";
+    d2 = 0;
+  }
+}
+
+function missionShow() {
+  if (d3 == 0) {
+    missionInfo.style.display = "flex";
+    display = 0;
+    d2 = 0;
+    d4 = 0;
+    d3 = 1;
+    hide(display, d2, d3, d4);
+  } else {
+    missionInfo.style.display = "none";
+    d3 = 0;
+  }
+}
+
+function messageShow() {
+  if (d4 == 0) {
+    messageInfo.style.display = "flex";
+    display = 0;
+    d2 = 0;
+    d3 = 0;
+    d4 = 1;
+    hide(display, d2, d3, d4);
+  } else {
+    messageInfo.style.display = "none";
+    d4 = 0;
+  }
+}
 
 // events section
-
+day1.style.color = "#1f99d1";
+day2.style.color = "white";
+day3.style.color = "white";
+day4.style.color = "white";
 var i = 1;
 nxtbtn.addEventListener("click", function (e) {
   console.log(i);
@@ -112,11 +169,12 @@ nxtbtn.addEventListener("click", function (e) {
       i,
       2,
       "Opening Ceremony",
-      "2",
+      "",
       "",
       "Time : 11:00 AM - 01:00 PM",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
-      "Tagline: Opening Ceremony"
+      "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
+      "Tagline: Opening Ceremony",
+      "url('image 17.png')"
     );
   }
   if (i == 2) {
@@ -126,11 +184,13 @@ nxtbtn.addEventListener("click", function (e) {
       2,
       "Workshop",
       "",
-      "200",
+      "79",
       "Time : 02:00-04:00 PM",
-      `Explore the realm of ethical hacking and cybersecurity in our comprehensive workshop. Gain insights into tools, ethical principles, and responsible hacking practices. In today's digital world, ethical hackers play a vital role in safeguarding systems. Join us for an interactive experience, fostering cybersecurity awareness, whether you aspire to a cybersecurity career or seek knowledge
+      `ethical hacking workshop for students , pros and cons , various tools and awareness 
+    Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
     `,
-      "Tagline: ethical hacking workshop"
+      "Tagline: ethical hacking workshop",
+      "url('src/image 675.png')"
     );
     i = 0;
   }
@@ -143,10 +203,11 @@ function dayy1(e) {
   btxt3.innerHTML = "03/10/23";
   tagline.innerHTML = "Tagline: Opening Ceremony";
   desc.innerHTML =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.";
+    "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape";
+  enamediv.style.backgroundImage = "url('image 17.png')";
 }
 
-function change(e, i, n, a, b, c, d, f, g) {
+function change(e, i, n, a, b, c, d, f, g, h) {
   day.innerHTML = e;
   counter.innerHTML = `${i}/${n}`;
   ename.innerHTML = a;
@@ -155,11 +216,15 @@ function change(e, i, n, a, b, c, d, f, g) {
   stxt3.innerHTML = d;
   desc.innerHTML = f;
   tagline.innerHTML = g;
-  
+  enamediv.style.backgroundImage = h;
 }
 
 day1.addEventListener("click", function (e) {
   var i = 1;
+  day1.style.color = "#1f99d1";
+  day2.style.color = "white";
+  day3.style.color = "white";
+  day4.style.color = "white";
   console.log("hello");
   dayy1(e);
   console.log(e.target);
@@ -172,11 +237,12 @@ day1.addEventListener("click", function (e) {
         i,
         2,
         "Opening Ceremony",
-        "2M",
-        "200",
+        "",
+        "",
         "Time : 11:00 AM - 01:00 PM",
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, in ipsa! Culpa totam sint, perferendis voluptate eius blanditiis illum ad voluptatum iure dolore quisquam doloremque impedit autem, reiciendis dolorem maxime.",
-        "Tagline: Opening Ceremony"
+        "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
+        "Tagline: Opening Ceremony",
+        "url('image 17.png')"
       );
     }
     if (i == 2) {
@@ -185,12 +251,14 @@ day1.addEventListener("click", function (e) {
         i,
         2,
         "Workshop",
-        "2M",
-        "200",
+        "",
+        "79",
         "Time : 02:00-04:00 PM",
-        `Dive into Ethical Hacking & Cybersecurity: Discover tools, ethics, and responsible practices. Essential in our digital world, join us for interactive learning, whether you aim for a career or knowledge.
+        `ethical hacking workshop for students , pros and cons , various tools and awareness 
+    Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
     `,
-        "Tagline: ethical hacking workshop"
+        "Tagline: ethical hacking workshop",
+        "url('src/image 675.png')"
       );
       i = 0;
     }
@@ -199,7 +267,10 @@ day1.addEventListener("click", function (e) {
 
 day2.addEventListener("click", function (e) {
   var i = 1;
-
+  day1.style.color = "white";
+  day2.style.color = "#1f99d1";
+  day3.style.color = "white";
+  day4.style.color = "white";
   console.log("hello2");
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
@@ -209,6 +280,7 @@ day2.addEventListener("click", function (e) {
   desc.innerHTML =
     " Treasure hunt:  Digital Key Quest is a treasure hunt event where you decipher clues, solve puzzles, and unlock digital keys to hidden treasure";
   console.log(e.target.textContent);
+  enamediv.style.backgroundImage = "url('src/DIGITAL KEY QUEST.png')";
 
   nxtbtn.addEventListener("click", function () {
     console.log(i);
@@ -219,11 +291,12 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Digital Key Quest",
-        "2M",
-        "200",
+        "4",
+        "150",
         "Time : 08:00 AM - 01:00 PM",
         " Treasure hunt  Digital Key Quest is a treasure hunt event where you decipher clues, solve puzzles, and unlock digital keys to hidden treasure",
-        "Tagline: Digital key quest"
+        "Tagline: Digital key quest",
+        "url('src/DIGITAL KEY QUEST.png')"
       );
     }
     if (i == 2) {
@@ -232,11 +305,12 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Workshop",
-        "2M",
-        "200",
+        "",
+        "50",
         "Time : 02:00 - 04:00 PM",
         "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
-        "Tagline: DRDO workshop"
+        "Tagline: DRDO workshop",
+        "url('src/DRDO.png')"
       );
     }
     if (i == 3) {
@@ -245,11 +319,12 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Seminar(CTF)",
-        "2M",
-        "200",
+        "",
+        "Free",
         "Time : 04:00 - 05:00 PM ",
-        "Unlock the world of Capture the Flag (CTF) in our seminar. Dive into thrilling challenges, puzzles, and cybersecurity insights. Discover why CTF is vital in the digital era. Join us!",
-        "Tagline: CTF how is that event and why? "
+        "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
+        "Tagline: CTF how is that event and why? ",
+        "url('src/CTF SEMINAR.png')"
       );
       i = 0;
     }
@@ -258,8 +333,11 @@ day2.addEventListener("click", function (e) {
 
 day3.addEventListener("click", function (e) {
   var i = 1;
+  day1.style.color = "white";
+  day2.style.color = "white";
+  day3.style.color = "#1f99d1";
+  day4.style.color = "white";
 
-  console.log("hello2");
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/2";
   ename.innerHTML = "MUN Security Council";
@@ -267,6 +345,7 @@ day3.addEventListener("click", function (e) {
   tagline.innerHTML = "Tagline: MUN";
   desc.innerHTML =
     "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.";
+  enamediv.style.backgroundImage = "url('src/MUN.png')";
 
   console.log(e.target.textContent);
   nxtbtn.addEventListener("click", function () {
@@ -282,7 +361,8 @@ day3.addEventListener("click", function (e) {
         "350",
         "Time :10:00 AM - 04:00 PM",
         "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.",
-        "Tagline: MUN"
+        "Tagline: MUN",
+        "url('src/MUN.png')"
       );
     }
     if (i == 2) {
@@ -292,9 +372,11 @@ day3.addEventListener("click", function (e) {
         2,
         "Open Mic",
         "",
+        "Free",
         "Time : 04:30 - 06:30 PM",
-        "Embrace OPEN MIC: A celebration of creativity and diverse voices through spoken word, music, comedy, and more. Perform or witness, it's your stage for self-expression. Join our vibrant, inclusive community!",
-        "Tagline: OPEN MIC"
+        "Welcome to OPEN MIC, where we celebrate unbridled creativity and amplify diverse voices.Join us for an unforgettable, electrifying experience. Don't miss out on this opportunity to be part of our vibrant and inclusive community!",
+        "Tagline: OPEN MIC",
+        "url('src/Open mic.png')"
       );
       i = 0;
     }
@@ -303,6 +385,10 @@ day3.addEventListener("click", function (e) {
 
 day4.addEventListener("click", function (e) {
   var i = 1;
+  day1.style.color = "white";
+  day2.style.color = "white";
+  day3.style.color = "white";
+  day4.style.color = "#1f99d1";
 
   console.log("hello2");
   day.innerHTML = e.target.textContent;
@@ -311,7 +397,8 @@ day4.addEventListener("click", function (e) {
   btxt3.innerHTML = "06/10/23";
   tagline.innerHTML = "Tagline: Imposter Among Us - Hunt or BeHunted!";
   desc.innerHTML =
-    "Step into the immersive realm of Among Us brought to life. Uncover imposters, gather clues, and survive the thrilling fusion of trust and deception in this real-world gaming experience.";
+    "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.";
+  enamediv.style.backgroundImage = "url('src/IMPOSTER HUNT.png')";
 
   console.log(e.target.textContent);
   nxtbtn.addEventListener("click", function () {
@@ -324,10 +411,11 @@ day4.addEventListener("click", function (e) {
         3,
         "Imposter Hunt",
         "4",
-        "100",
+        "200",
         "Time : 08:00 AM - 12:00 PM",
         "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.",
-        "Tagline: Imposter Among Us - Hunt or BeHunted!"
+        "Tagline: Imposter Among Us - Hunt or BeHunted!",
+        "url('src/IMPOSTER HUNT.png')"
       );
     }
     if (i == 2) {
@@ -339,8 +427,9 @@ day4.addEventListener("click", function (e) {
         "1",
         "100",
         "Time : 02:00 - 05:00 PM",
-        "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts. ",
-        "Tagline: Catch the flag and be a hero"
+        "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts.        ",
+        "Tagline: Catch the flag and be a hero",
+        "url('src/CTF.png')"
       );
     }
     if (i == 3) {
@@ -352,8 +441,9 @@ day4.addEventListener("click", function (e) {
         "",
         "",
         "Time : 05:00 - 06:30 PM",
-        "lorem ipsum dolor sit amet, consectetur adipiscing lorem, sed diam nonumy lore lore lorem.",
-        "Tagline: Closing ceremony"
+        "Join us at the closing ceremony of Aarhant2.0!",
+        "Tagline: Closing ceremony",
+        "url('src/image 675.png')"
       );
       i = 0;
     }
