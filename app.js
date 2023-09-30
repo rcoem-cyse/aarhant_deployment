@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".main_container"),
+  smooth: true,
+});
+
 let day1 = document.querySelector("#day1");
 let day2 = document.querySelector("#day2");
 let day3 = document.querySelector("#day3");
@@ -172,7 +177,9 @@ nxtbtn.addEventListener("click", function (e) {
       "",
       "",
       "Time : 11:00 AM - 01:00 PM",
+
       "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
+
       "Tagline: Opening Ceremony",
       "url('image 17.png')"
     );
@@ -203,7 +210,9 @@ function dayy1(e) {
   btxt3.innerHTML = "03/10/23";
   tagline.innerHTML = "Tagline: Opening Ceremony";
   desc.innerHTML =
+
     "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape";
+
   enamediv.style.backgroundImage = "url('image 17.png')";
 }
 
@@ -240,7 +249,9 @@ day1.addEventListener("click", function (e) {
         "",
         "",
         "Time : 11:00 AM - 01:00 PM",
+
         "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
+
         "Tagline: Opening Ceremony",
         "url('image 17.png')"
       );
@@ -374,7 +385,9 @@ day3.addEventListener("click", function (e) {
         "",
         "Free",
         "Time : 04:30 - 06:30 PM",
+
         "Welcome to OPEN MIC, where we celebrate unbridled creativity and amplify diverse voices.Join us for an unforgettable, electrifying experience. Don't miss out on this opportunity to be part of our vibrant and inclusive community!",
+
         "Tagline: OPEN MIC",
         "url('src/Open mic.png')"
       );
@@ -441,7 +454,9 @@ day4.addEventListener("click", function (e) {
         "",
         "",
         "Time : 05:00 - 06:30 PM",
+
         "Join us at the closing ceremony of Aarhant2.0!",
+
         "Tagline: Closing ceremony",
         "url('src/image 675.png')"
       );
