@@ -207,10 +207,9 @@ function dayy1(e) {
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/2";
   ename.innerHTML = "Opening Ceremony";
-  btxt3.innerHTML = "03/10/23";
+  btxt3.innerHTML = "04/10/23";
   tagline.innerHTML = "Tagline: Opening Ceremony";
   desc.innerHTML =
-
     "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape";
 
   enamediv.style.backgroundImage = "url('image 17.png')";
@@ -286,7 +285,7 @@ day2.addEventListener("click", function (e) {
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
   ename.innerHTML = "Digital Key Quest";
-  btxt3.innerHTML = "04/10/23";
+  btxt3.innerHTML = "05/10/23";
   tagline.innerHTML = "Tagline: Digital key quest";
   desc.innerHTML =
     " Treasure hunt:  Digital Key Quest is a treasure hunt event where you decipher clues, solve puzzles, and unlock digital keys to hidden treasure";
@@ -352,7 +351,7 @@ day3.addEventListener("click", function (e) {
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/2";
   ename.innerHTML = "MUN Security Council";
-  btxt3.innerHTML = "05/10/23";
+  btxt3.innerHTML = "06/10/23";
   tagline.innerHTML = "Tagline: MUN";
   desc.innerHTML =
     "Model UN conference on cybersecurity, exploring urgent threats and solutions through diplomacy and negotiation. Delegates will assume the roles of UN member state representatives, debating and drafting resolutions to fortify global cyber defenses.";
@@ -407,7 +406,7 @@ day4.addEventListener("click", function (e) {
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
   ename.innerHTML = "Imposter Hunt";
-  btxt3.innerHTML = "06/10/23";
+  btxt3.innerHTML = "07/10/23";
   tagline.innerHTML = "Tagline: Imposter Among Us - Hunt or BeHunted!";
   desc.innerHTML =
     "Imposter Hunt: Among Us in Real Life – a groundbreaking, never-before-seen experience Real-life Among Us event where you gather clues, uncover imposters, and work as a team to survive.";
@@ -465,14 +464,6 @@ day4.addEventListener("click", function (e) {
   });
 });
 
-let aboutInDynamic = document.querySelector(".abt_info_in_cont1");
-
-let h1 = document.createElement("h1");
-
-h1.innerHTML = "60+";
-
-aboutInDynamic.appendChild(h1);
-
 // mouse Animation
 window.addEventListener("mousemove", function (e) {
   var to_append = document.getElementsByClassName("loader-container")[0];
@@ -491,4 +482,34 @@ window.addEventListener("mousemove", function (e) {
   if (document.getElementsByClassName("loader-container").length > 50) {
     document.body.removeChild(to_append);
   }
+});
+
+let ta = gsap.timeline();
+
+ta.from("nav", {
+  opacity: 0,
+  y: -50,
+
+  duration: 0.8,
+});
+
+ta.from(".head_intro h2, .head_intro h3, .head_intro h1", {
+  opacity: 0,
+  duration: 0.5,
+  x: -50,
+  stagger: 0.3,
+});
+
+ta.from(".head_tagline h1, .head_tagline p", {
+  opacity: 0,
+  duration: 0.7,
+  x: 50,
+  stagger: 0.3,
+});
+
+ta.from(".explrbtn , .laptopimg ,.lapimgs", {
+  opacity: 0,
+  duration: 0.4,
+  y: 30,
+  stagger: 0.2,
 });
