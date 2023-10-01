@@ -1733,7 +1733,9 @@ body {
 
 .card {
   width: 20rem;
-  height: 45rem;
+
+  height: 41rem;
+
   display: flex;
   flex-direction: column;
   border: white 0.09em solid;
