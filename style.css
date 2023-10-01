@@ -220,8 +220,28 @@ body {
   color: #fff;
   background: linear-gradient(90deg, #7946ab 0%, #2565c9 100%);
   z-index: 1;
+  position: relative;
+  transition: 0.3 ease;
 }
 
+.explrbtn button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5em;
+  background: linear-gradient(90deg, #7946ab 0%, #2565c9 100%);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.explrbtn button:hover::before {
+  transform: scale(1.8);
+  opacity: 0;
+  cursor: pointer;
+}
 /* header media queries  */
 
 @media (max-width: 550px) {
@@ -657,6 +677,9 @@ body {
 #abt_hod {
   top: 20%;
   left: 32%;
+}
+#abt_hod img {
+  border-radius: 50px;
 }
 #abt_events {
   top: 59%;
@@ -1232,6 +1255,9 @@ body {
   text-decoration: none;
 }
 
+.f_socials_cont img {
+  width: 20px;
+}
 .footer_socials {
   display: flex;
   background-color: black;
@@ -1275,9 +1301,12 @@ body {
 .footer_btm_cont {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  padding: 2em;
+  height: 15.5em;
+  justify-content: center;
+
+  padding: 2em 0em;
   background-color: #101010;
+  gap: 1vw;
 }
 .footer_btm_cont h4 {
   font-size: 22px;
@@ -1291,23 +1320,55 @@ body {
   gap: 0.5em;
   font-weight: 100;
   color: rgb(95, 155, 155);
-
+}
+.btm_div h4 {
+  margin-bottom: 0.5em;
 }
 
 .social-icons {
   display: flex;
   flex-direction: row;
- 
 }
 
 .social-icons span {
   margin-right: 4%;
-  
 }
 
 .social-icons a {
-  color: white; 
-  margin-right: 10px; 
+  color: white;
+  margin-right: 10px;
+}
+.btm_left {
+  width: 40%;
+}
+.btm_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+.btm_socials div {
+  display: flex;
+  gap: 0.3em;
+}
+.btm_socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.btm_right_connected {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 15vw;
+}
+.social-icons span {
+  width: 95%;
+}
+.btm_credits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 /* fotter media queires  */
@@ -1380,17 +1441,19 @@ body {
   .footer_btm_cont {
     display: flex;
     width: 100%;
+    height: inherit;
+
     justify-content: space-around;
     padding: 1em;
     background-color: #101010;
   }
   .footer_btm_cont h4 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 100;
     color: #45edf2;
   }
   .footer_btm_cont p {
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
   .btm_div {
     display: flex;
@@ -1401,7 +1464,26 @@ body {
     color: rgb(95, 155, 155);
   }
   .btm_left {
-    width: 55%;
+    width: 45%;
+  }
+  .btm_right {
+    width: 43%;
+    gap: 1em;
+  }
+  .btm_right_connected {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 40vw;
+  }
+  .social-icons span {
+    width: 100%;
+    font-size: 3vw;
+  }
+  .btm_credits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
   }
 }
 
@@ -1651,7 +1733,7 @@ body {
 
 .card {
   width: 20rem;
-  height: 35rem;
+  height: 36rem;
   display: flex;
   flex-direction: column;
   border: white 0.09em solid;
