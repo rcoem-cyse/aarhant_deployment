@@ -173,10 +173,13 @@ nxtbtn.addEventListener("click", function (e) {
   if (i == 1) {
     change(
       "DAY 1",
+
       1,
       1,
       "Digital forensics",
       "Solo",
+
+
       "79",
       "Time : 02:00 - 04:00 PM",
       "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
@@ -285,7 +288,9 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Opening Ceremony",
+
         "Solo",
+
         "Free",
         "Time : 11:00 AM - 01:00 PM",
 
@@ -301,7 +306,10 @@ day2.addEventListener("click", function (e) {
         i,
         3,
         "Workshop",
+
         "Solo",
+
+  
         "79",
         "Time : 02:00-04:00 PM",
         `ethical hacking workshop for students , pros and cons , various tools and awareness 
@@ -370,6 +378,7 @@ day3.addEventListener("click", function (e) {
         e.target.textContent,
         i,
         3,
+
         " Cyber Law",
         "Solo",
         "Free",
@@ -377,6 +386,7 @@ day3.addEventListener("click", function (e) {
         "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
         "Tagline: Workshop Cyber crime prevention and cyber law, solo ",
         "url('src/CTF SEMINAR.png')"
+
       );
     }
     if (i == 3) {
@@ -384,6 +394,7 @@ day3.addEventListener("click", function (e) {
         e.target.textContent,
         i,
         3,
+
         "Workshop",
         "Solo",
         "50",
@@ -391,6 +402,8 @@ day3.addEventListener("click", function (e) {
         "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
         "Tagline: DRDO workshop",
         "url('src/DRDO.png')"
+
+
       );
       i = 0;
     }
@@ -438,7 +451,11 @@ day4.addEventListener("click", function (e) {
         i,
         2,
         "Open Mic",
+
         "Solo",
+
+       
+
         "Free",
         "Time : 04:30 - 06:30 PM",
 
@@ -508,7 +525,11 @@ day5.addEventListener("click", function (e) {
         i,
         3,
         "Closing Ceremony",
+       
         "Solo",
+
+       
+
         "Free",
         "Time : 05:00 - 06:30 PM",
 
