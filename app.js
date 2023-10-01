@@ -7,6 +7,7 @@ let day1 = document.querySelector("#day1");
 let day2 = document.querySelector("#day2");
 let day3 = document.querySelector("#day3");
 let day4 = document.querySelector("#day4");
+let day5 = document.querySelector("#day5");
 let day = document.querySelector("#day");
 let counter = document.querySelector("#counter");
 let ename = document.querySelector("#ename");
@@ -164,48 +165,32 @@ day1.style.color = "#1f99d1";
 day2.style.color = "white";
 day3.style.color = "white";
 day4.style.color = "white";
-var i = 1;
+day5.style.color = "white";
+var i = 0;
 nxtbtn.addEventListener("click", function (e) {
   console.log(i);
   i++;
   if (i == 1) {
     change(
       "DAY 1",
-      i,
-      2,
-      "Opening Ceremony",
-      "",
-      "",
-      "Time : 11:00 AM - 01:00 PM",
-
-      "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
-
-      "Tagline: Opening Ceremony",
-      "url('image 17.png')"
-    );
-  }
-  if (i == 2) {
-    change(
-      "DAY 1",
-      i,
-      2,
-      "Workshop",
-      "",
+      1,
+      1,
+      "Digital forensics",
+      "Solo",
       "79",
-      "Time : 02:00-04:00 PM",
-      `ethical hacking workshop for students , pros and cons , various tools and awareness 
-    Learn ethical hacking and cybersecurity in this workshop, covering tools, pros, cons, and cybersecurity awareness.
-    `,
-      "Tagline: ethical hacking workshop",
-      "url('src/image 675.png')"
+      "Time : 02:00 - 04:00 PM",
+      "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
+      "Tagline: DRDO workshop",
+      "url('image 17.png')"
     );
     i = 0;
   }
+  console.log(i);
 });
 
-function dayy1(e) {
+function dayy2(e) {
   day.innerHTML = e.target.textContent;
-  counter.innerHTML = "1/2";
+  counter.innerHTML = "1/3";
   ename.innerHTML = "Opening Ceremony";
   btxt3.innerHTML = "04/10/23";
   tagline.innerHTML = "Tagline: Opening Ceremony";
@@ -228,13 +213,68 @@ function change(e, i, n, a, b, c, d, f, g, h) {
 }
 
 day1.addEventListener("click", function (e) {
-  var i = 1;
+  var i = 0;
   day1.style.color = "#1f99d1";
   day2.style.color = "white";
   day3.style.color = "white";
   day4.style.color = "white";
+  day5.style.color = "white";
+  console.log("hello2");
+  day.innerHTML = e.target.textContent;
+  counter.innerHTML = "1/1";
+  ename.innerHTML = "Digital forensics ";
+  btxt3.innerHTML = "03/10/23";
+  tagline.innerHTML = "Tagline: Digital key quest";
+  desc.innerHTML =
+    "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!";
+  console.log(e.target.textContent);
+  enamediv.style.backgroundImage = "url('image 17.png')";
+
+  nxtbtn.addEventListener("click", function () {
+    console.log(i);
+    i++;
+    if (i == 1) {
+      change(
+        e.target.textContent,
+        1,
+        1,
+        "Digital forensics ",
+        "Solo",
+        "79",
+        "Time : 02:00 - 04:00 PM",
+        "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!",
+        "Tagline: DRDO workshop",
+        "url('image 17.png')"
+      );
+    }
+    if (i == 2) {
+      change(
+        e.target.textContent,
+        1,
+        1,
+        "Digital forensics ",
+        "Solo",
+        "79",
+        "Time : 02:00 - 04:00 PM",
+        "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!",
+        "Tagline: DRDO workshop",
+        "url('image 17.png')"
+      );
+      i = 0;
+      console.log(i);
+    }
+  });
+});
+
+day2.addEventListener("click", function (e) {
+  var i = 1;
+  day1.style.color = "white";
+  day2.style.color = "#1f99d1";
+  day3.style.color = "white";
+  day4.style.color = "white";
+  day5.style.color = "white";
   console.log("hello");
-  dayy1(e);
+  dayy2(e);
   console.log(e.target);
   nxtbtn.addEventListener("click", function () {
     console.log(i);
@@ -243,10 +283,10 @@ day1.addEventListener("click", function (e) {
       change(
         e.target.textContent,
         i,
-        2,
+        3,
         "Opening Ceremony",
-        "",
-        "",
+        "Solo",
+        "Free",
         "Time : 11:00 AM - 01:00 PM",
 
         "We invite you to AARHANT, central India's biggest dynamic cybersecurity awareness event designed to equip young college students with the knowledge and skills needed to navigate the digital landscape",
@@ -259,9 +299,9 @@ day1.addEventListener("click", function (e) {
       change(
         e.target.textContent,
         i,
-        2,
+        3,
         "Workshop",
-        "",
+        "Solo",
         "79",
         "Time : 02:00-04:00 PM",
         `ethical hacking workshop for students , pros and cons , various tools and awareness 
@@ -270,17 +310,33 @@ day1.addEventListener("click", function (e) {
         "Tagline: ethical hacking workshop",
         "url('src/image 675.png')"
       );
+    }
+
+    if (i == 3) {
+      change(
+        e.target.textContent,
+        i,
+        3,
+        "Seminar(CTF)",
+        "Solo",
+        "Free",
+        "Time : 04:00 - 05:00 PM ",
+        "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
+        "Tagline: CTF how is that event and why? ",
+        "url('src/CTF SEMINAR.png')"
+      );
       i = 0;
     }
   });
 });
 
-day2.addEventListener("click", function (e) {
+day3.addEventListener("click", function (e) {
   var i = 1;
   day1.style.color = "white";
-  day2.style.color = "#1f99d1";
-  day3.style.color = "white";
+  day2.style.color = "white";
+  day3.style.color = "#1f99d1";
   day4.style.color = "white";
+  day5.style.color = "white";
   console.log("hello2");
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
@@ -314,13 +370,13 @@ day2.addEventListener("click", function (e) {
         e.target.textContent,
         i,
         3,
-        "Workshop",
-        "",
-        "50",
-        "Time : 02:00 - 04:00 PM",
-        "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
-        "Tagline: DRDO workshop",
-        "url('src/DRDO.png')"
+        " Cyber Law",
+        "Solo",
+        "Free",
+        "Time : 02:00 - 04:00 PM ",
+        "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
+        "Tagline: Workshop Cyber crime prevention and cyber law, solo ",
+        "url('src/CTF SEMINAR.png')"
       );
     }
     if (i == 3) {
@@ -328,25 +384,26 @@ day2.addEventListener("click", function (e) {
         e.target.textContent,
         i,
         3,
-        "Seminar(CTF)",
-        "",
-        "Free",
-        "Time : 04:00 - 05:00 PM ",
-        "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
-        "Tagline: CTF how is that event and why? ",
-        "url('src/CTF SEMINAR.png')"
+        "Workshop",
+        "Solo",
+        "50",
+        "Time : 04:00 - 06:00 PM",
+        "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
+        "Tagline: DRDO workshop",
+        "url('src/DRDO.png')"
       );
       i = 0;
     }
   });
 });
 
-day3.addEventListener("click", function (e) {
+day4.addEventListener("click", function (e) {
   var i = 1;
   day1.style.color = "white";
   day2.style.color = "white";
-  day3.style.color = "#1f99d1";
-  day4.style.color = "white";
+  day3.style.color = "white";
+  day4.style.color = "#1f99d1";
+  day5.style.color = "white";
 
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/2";
@@ -381,7 +438,7 @@ day3.addEventListener("click", function (e) {
         i,
         2,
         "Open Mic",
-        "",
+        "Solo",
         "Free",
         "Time : 04:30 - 06:30 PM",
 
@@ -395,12 +452,13 @@ day3.addEventListener("click", function (e) {
   });
 });
 
-day4.addEventListener("click", function (e) {
+day5.addEventListener("click", function (e) {
   var i = 1;
   day1.style.color = "white";
   day2.style.color = "white";
   day3.style.color = "white";
-  day4.style.color = "#1f99d1";
+  day4.style.color = "white";
+  day5.style.color = "#1f99d1";
 
   console.log("hello2");
   day.innerHTML = e.target.textContent;
@@ -436,7 +494,7 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Catch The Flag",
-        "1",
+        "Solo",
         "100",
         "Time : 02:00 - 05:00 PM",
         "Immersive cybersecurity competition testing your skills and knowledge, with heart-pounding scenarios and insights from top experts.        ",
@@ -450,8 +508,8 @@ day4.addEventListener("click", function (e) {
         i,
         3,
         "Closing Ceremony",
-        "",
-        "",
+        "Solo",
+        "Free",
         "Time : 05:00 - 06:30 PM",
 
         "Join us at the closing ceremony of Aarhant2.0!",
