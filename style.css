@@ -1733,7 +1733,7 @@ body {
 
 .card {
   width: 20rem;
-  height: 36rem;
+  height: 45rem;
   display: flex;
   flex-direction: column;
   border: white 0.09em solid;
@@ -1768,7 +1768,7 @@ body {
   font-weight: 300;
 
   font-size: 15px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 /* media queries */
