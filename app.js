@@ -241,6 +241,7 @@ day1.addEventListener("click", function (e) {
   day4.style.color = "white";
   day5.style.color = "white";
   console.log("hello2");
+  btxt1.innerHTML = "Solo";
   btxt2.innerHTML = "79";
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/1";
@@ -297,6 +298,7 @@ day2.addEventListener("click", function (e) {
   day5.style.color = "white";
   console.log("hello");
   dayy2(e);
+  btxt1.innerHTML = "Solo";
   btxt2.innerHTML = "Free";
   console.log(e.target);
   nxtbtn.addEventListener("click", function () {
@@ -365,6 +367,7 @@ day3.addEventListener("click", function (e) {
   day4.style.color = "white";
   day5.style.color = "white";
   console.log("hello2");
+  btxt1.innerHTML = "4";
   btxt2.innerHTML = "150";
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
@@ -445,6 +448,7 @@ day4.addEventListener("click", function (e) {
   enamediv.style.backgroundImage = "url('src/MUN.png')";
 
   console.log(e.target.textContent);
+  btxt1.innerHTML = "2";
   btxt2.innerHTML = "350";
   nxtbtn.addEventListener("click", function () {
     console.log(i);
@@ -494,6 +498,7 @@ day5.addEventListener("click", function (e) {
   day5.style.color = "#1f99d1";
 
   console.log("hello2");
+  btxt1.innerHTML = "4";
   btxt2.innerHTML = "200";
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
