@@ -20,17 +20,38 @@ let btxt3 = document.querySelector("#btxt3");
 let stxt3 = document.querySelector("#stxt3");
 let desc = document.querySelector("#desc");
 let tagline = document.querySelector("#tagline");
+let ar2 = document.querySelector(".ar2");
 
-window.onpointermove = (event) => {
-  const { clientX, clientY } = event;
+// on reload text animation
 
-  blob.animate(
-    {
-      left: `${clientX}px`,
-      top: `${clientY}px`,
-    },
-    { duration: 3000, fill: "forwards" }
-  );
+window.onload = function () {
+  setTimeout(function () {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let interval = null;
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      ar2.innerText = ar2.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return ar2.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= ar2.dataset.value.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 50);
+  }, 1500);
 };
 
 //text effect
@@ -179,7 +200,6 @@ nxtbtn.addEventListener("click", function (e) {
       "Digital forensics",
       "Solo",
 
-
       "79",
       "Time : 02:00 - 04:00 PM",
       "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
@@ -309,7 +329,6 @@ day2.addEventListener("click", function (e) {
 
         "Solo",
 
-  
         "79",
         "Time : 02:00-04:00 PM",
         `ethical hacking workshop for students , pros and cons , various tools and awareness 
@@ -386,7 +405,6 @@ day3.addEventListener("click", function (e) {
         "Explore Capture the Flag (CTF) in our seminar. Uncover its challenges, puzzles, and cybersecurity scenarios. Learn why it's popular and skill-enhancing. Join us!",
         "Tagline: Workshop Cyber crime prevention and cyber law, solo ",
         "url('src/CTF SEMINAR.png')"
-
       );
     }
     if (i == 3) {
@@ -402,8 +420,6 @@ day3.addEventListener("click", function (e) {
         "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
         "Tagline: DRDO workshop",
         "url('src/DRDO.png')"
-
-
       );
       i = 0;
     }
@@ -453,8 +469,6 @@ day4.addEventListener("click", function (e) {
         "Open Mic",
 
         "Solo",
-
-       
 
         "Free",
         "Time : 04:30 - 06:30 PM",
@@ -525,10 +539,8 @@ day5.addEventListener("click", function (e) {
         i,
         3,
         "Closing Ceremony",
-       
-        "Solo",
 
-       
+        "Solo",
 
         "Free",
         "Time : 05:00 - 06:30 PM",
