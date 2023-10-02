@@ -1,7 +1,7 @@
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector(".main_container"),
-//   smooth: true,
-// });
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".main_container"),
+  smooth: true,
+});
 
 let day1 = document.querySelector("#day1");
 let day2 = document.querySelector("#day2");
