@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector(".main_container"),
-  smooth: true,
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector(".main_container"),
+//   smooth: true,
+// });
 
 let day1 = document.querySelector("#day1");
 let day2 = document.querySelector("#day2");
@@ -51,7 +51,7 @@ window.onload = function () {
 
       iteration += 1 / 3;
     }, 50);
-  }, 1500);
+  }, 1200);
 };
 
 //text effect
@@ -194,16 +194,14 @@ nxtbtn.addEventListener("click", function (e) {
   if (i == 1) {
     change(
       "DAY 1",
-
       1,
       1,
-      "Digital forensics",
+      "Digital forensics ",
       "Solo",
-
       "79",
       "Time : 02:00 - 04:00 PM",
-      "DRDO Workshop is an exclusive event for future innovators, offering insights into cutting-edge projects, groundbreaking research, and dynamic tech careers.",
-      "Tagline: DRDO workshop",
+      "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!",
+      "Tagline: Digital forensics",
       "url('image 17.png')"
     );
     i = 0;
@@ -243,11 +241,12 @@ day1.addEventListener("click", function (e) {
   day4.style.color = "white";
   day5.style.color = "white";
   console.log("hello2");
+  btxt2.innerHTML = "79";
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/1";
   ename.innerHTML = "Digital forensics ";
   btxt3.innerHTML = "03/10/23";
-  tagline.innerHTML = "Tagline: Digital key quest";
+  tagline.innerHTML = "Tagline: Digital forensics";
   desc.innerHTML =
     "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!";
   console.log(e.target.textContent);
@@ -266,7 +265,7 @@ day1.addEventListener("click", function (e) {
         "79",
         "Time : 02:00 - 04:00 PM",
         "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!",
-        "Tagline: DRDO workshop",
+        "Tagline: Digital forensics",
         "url('image 17.png')"
       );
     }
@@ -280,7 +279,7 @@ day1.addEventListener("click", function (e) {
         "79",
         "Time : 02:00 - 04:00 PM",
         "Embark on a thrilling journey with our Cyber Crime Prevention and Cyber Law Workshop! Explore digital intrigue, master cyber threat prevention, and navigate internet legality. Equip yourself for the digital age!",
-        "Tagline: DRDO workshop",
+        "Tagline: Digital forensics",
         "url('image 17.png')"
       );
       i = 0;
@@ -298,6 +297,7 @@ day2.addEventListener("click", function (e) {
   day5.style.color = "white";
   console.log("hello");
   dayy2(e);
+  btxt2.innerHTML = "Free";
   console.log(e.target);
   nxtbtn.addEventListener("click", function () {
     console.log(i);
@@ -365,6 +365,7 @@ day3.addEventListener("click", function (e) {
   day4.style.color = "white";
   day5.style.color = "white";
   console.log("hello2");
+  btxt2.innerHTML = "150";
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
   ename.innerHTML = "Digital Key Quest";
@@ -444,6 +445,7 @@ day4.addEventListener("click", function (e) {
   enamediv.style.backgroundImage = "url('src/MUN.png')";
 
   console.log(e.target.textContent);
+  btxt2.innerHTML = "350";
   nxtbtn.addEventListener("click", function () {
     console.log(i);
     i++;
@@ -492,6 +494,7 @@ day5.addEventListener("click", function (e) {
   day5.style.color = "#1f99d1";
 
   console.log("hello2");
+  btxt2.innerHTML = "200";
   day.innerHTML = e.target.textContent;
   counter.innerHTML = "1/3";
   ename.innerHTML = "Imposter Hunt";
@@ -604,3 +607,20 @@ ta.from(".explrbtn , .laptopimg ,.lapimgs", {
   y: 30,
   stagger: 0.2,
 });
+// function dur() {
+//   let d;
+//   if (window.innerWidth < 600) {
+//     d = (window.innerWidth - 600) / 150;
+//   } else {
+//     d = 50;
+//   }
+//   return d;
+// }
+
+// gsap.from(".sponser_main_cont h1 ", {
+//   opacity: 0,
+//   duration: 0.3,
+//   scale: 0.5,
+//   stagger: 0.2,
+//   scrollTrigger: ".sponser_main_cont",
+// });
