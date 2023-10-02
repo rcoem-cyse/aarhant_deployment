@@ -1502,7 +1502,7 @@ body {
   width: 100%;
   height: 85em;
   z-index: 0;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 #events {
@@ -1732,18 +1732,22 @@ body {
 }
 
 .card {
-  width: 20rem;
-  height: 48rem;
+  width: 21rem;
+  height: 45rem;
   display: flex;
   flex-direction: column;
   border: white 0.09em solid;
   z-index: 1;
   /* gap: 0.9rem; */
   border-radius: 5px;
+  padding: 0.4em;
+}
+.down_card {
+  height: 41rem;
 }
 .cardimg {
   width: 100%;
-  height: 45%;
+  height: 40%;
   border-bottom: #fff 0.1em solid;
 }
 
